@@ -1,0 +1,55 @@
+Download miniAudicle from http://audicle.cs.princeton.edu/mini/
+If you do not have Python 2.7 installed, do that too. 
+
+Open miniAudicle and press the "Start Virtual Machine" button on the Virtual Machine window.
+
+Open the file OSC_backend (simply double clicking it will open it in miniAudicle)
+
+On the OSC_backend, press the "Add Shred" button (the big green plus sign)
+
+Navigate to the VARIATOR_PKG folder in Terminal
+
+start Variator by typing the command:
+%> python projguipretty.py
+--------------------------------------
+Copy the following code into the "Object Editor" window:
+
+a::(60, 64, 67) 
+b::(64, 67, 70) 
+c::(a, 2).(b, 2)
+d::(60, 4).(62, 4).(64, 4).(65, 4)
+e::(64, 4).(65, 4).(67, 4).(69, 4)
+f::67, 4).(69, 4).(71, 4).(72, 4)
+ch1::(60, 64, 67) 
+ch2::(62, 65, 69) 
+ch3::(64, 67, 71) 
+ch4::(65, 69, 72) 
+ch5::(67, 71, 74) 
+ch6::(69, 72, 76) 
+ch7::(71, 74, 77) 
+prg::(ch1, 4).(ch2, 4).(ch3, 4).(ch4, 4).(ch5, 4).(ch6, 4).(ch7, 4)
+
+
+Then press the "Input Objects" button.
+----------------------------------------
+Now, in the "Code Entry" window: copy the following code:
+
+phrase.play(d)
+
+And now play the "Run Code" button.
+
+You should hear the first 4 notes of the major scale. 
+-----------------------------------------
+Replace the code in the "Code Entry" window with 
+ 
+phrase.play(prog)
+
+And now play the "Run Code" button.
+
+you should hear 7 ascending chords playing
+-----------------------------------------
+Now replace the code in the "Code Entry" with
+
+ phrase.play(prog, d)
+
+you should hear the previous two things play at the same time. 
