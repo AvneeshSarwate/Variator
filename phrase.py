@@ -1,7 +1,7 @@
 '''
 Created on Jul 27, 2012
 
-testing the directory change
+testing the directory change touch
 
 @author: avneeshsarwate
 '''
